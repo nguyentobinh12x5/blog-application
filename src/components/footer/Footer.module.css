@@ -1,0 +1,70 @@
+.container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  color: var(--softTextColor);
+  padding: 20px 0px;
+  align-items: center;
+}
+.info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logoText {
+  font-size: 24px;
+}
+.desc {
+  font-weight: 300;
+  line-height: 1.5;
+}
+.icons {
+  display: flex;
+  gap: 10px;
+}
+.links {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  gap: 100px;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-weight: 300;
+}
+.listTitle {
+  font-weight: bold;
+}
+.logoImage {
+  border-radius: 50%;
+}
+/* Máy tính bảng */
+@media screen and (max-width: 1024px) {
+  .links {
+    gap: 50px;
+  }
+}
+/* Điện thoại */
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .links {
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .links {
+    font-size: 14px;
+  }
+}
